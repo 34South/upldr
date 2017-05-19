@@ -1,0 +1,15 @@
+{{ define "upload" }}
+{{ template "head" }}
+
+<h1>Upload</h1>
+
+{{ template "loading" }}
+
+{{ if . }}
+<h1>{{ . }}</h1>
+{{ end }}
+
+{{ template "form" }}
+
+{{ template "foot" }}
+{{ end }}

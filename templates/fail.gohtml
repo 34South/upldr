@@ -1,0 +1,13 @@
+{{ define "fail" }}
+{{ template "head" }}
+
+<h1>Failed!</h1>
+
+{{ if . }}
+    {{ . }}
+{{ end }}
+
+<p><a href="/upload">Try again?</a></p>
+
+{{ template "foot" }}
+{{ end }}

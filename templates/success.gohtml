@@ -1,0 +1,16 @@
+{{ define "success" }}
+{{ template "head" }}
+
+<h1>Success!</h1>
+
+<p>Now we save shizzle to the database, using whatever url params get passed back to us.</p>
+
+
+{{ if . }}
+    {{ . }}
+{{ end }}
+
+<p><a href="/upload">Upload another?</a></p>
+
+{{ template "foot" }}
+{{ end }}

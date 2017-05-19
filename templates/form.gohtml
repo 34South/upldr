@@ -1,0 +1,11 @@
+{{ define "form" }}
+<form action="/upldr" method="POST" enctype="multipart/form-data">
+    <input type="text" name="upldr-bucket" placeholder="bucket"><br>
+    <input type="text" name="upldr-path" placeholder="path"><br>
+    <input type="text" name="upldr-name" placeholder="final object name"><br>
+    <input type="text" name="upldr-url-success" placeholder="call this url on success" value="http://localhost/success"><br>
+    <input type="text" name="upldr-url-fail" placeholder="call this url on fail" value="http://localhost/fail"><br>
+    <input type="file" name="upldr-file"><br>
+    <button type="submit" onclick="document.getElementById('overlay').style.display = 'flex';">Upload</button>
+</form>
+{{ end }}
